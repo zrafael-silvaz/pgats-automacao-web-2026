@@ -33,7 +33,7 @@ describe('Checkout', () => {
     }
   });
 
-  it.only('Realizando pedido com cadastro antes do checkout', () => {
+  it('Realizando pedido com cadastro antes do checkout', () => {
     usuario = gerarUsuario();
 
     navegacao.acessarInicio();
