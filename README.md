@@ -4,7 +4,7 @@ Automação de testes E2E com [Cypress](https://www.cypress.io/) para o site [Au
 
 ## Arquitetura
 
-O projeto segue um padrão próprio de organização, inspirado no Screenplay Pattern: os testes são escritos como uma sequência de ações e validações de negócio, não como interações diretas com elementos de tela.
+O projeto segue um padrão próprio de organização por ação de negócio, que toma emprestado um princípio central do Screenplay Pattern — organizar o código em torno do que o usuário faz, não da tela em que ele está — sem implementar sua estrutura formal (Actor, Task, Interaction, Question). Os testes são escritos como uma sequência de ações e validações de negócio, não como interações diretas com elementos de tela.
 
 Cada funcionalidade (login, cadastro, produtos, carrinho, checkout...) tem seu próprio módulo em `cypress/support/modules/`, com três arquivos:
 
@@ -85,7 +85,7 @@ npx cypress open
 Modo headless (linha de comando, como roda no CI):
 
 ```bash
-npx cypress run
+npx cypress run --e2e --browser chrome
 ```
 
 ## Relatórios

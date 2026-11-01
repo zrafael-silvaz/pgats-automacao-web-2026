@@ -12,6 +12,7 @@ Projeto de automação de testes E2E com Cypress e JavaScript para o site Automa
 6. **Teste independente.** Cada teste prepara o próprio cenário, limpa os dados que criou e não depende da ordem de execução.
 7. **Simples antes de genérico.** Só criar abstrações quando houver repetição real ou quando elas melhorarem claramente a leitura e a manutenção.
 8. **Legibilidade antes de encadeamentos complexos.** Sempre que possível, manter o fluxo do teste linear e evitar aninhamentos usados apenas para controlar Promises ou a execução dos comandos.
+9. **Nota sobre o padrão adotado:** a organização por módulo de ação de negócio (em vez de por tela) toma emprestado o princípio central do Screenplay Pattern, mas não implementa sua estrutura formal (Actor, Task, Interaction, Question). Não se refira a este projeto como "Screenplay Pattern" em documentação ou comunicação externa — a descrição correta é "módulos de ação de negócio, inspirados em princípios do Screenplay Pattern".
 
 ## 2. Estrutura de pastas
 
