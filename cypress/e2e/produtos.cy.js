@@ -12,9 +12,11 @@ describe('Produtos', () => {
     navegacao.irParaProdutos();
     validacaoProdutos.paginaProdutosVisivel();
     validacaoProdutos.listaVisivel();
+    cy.screenshot('lista-visivel');
 
     produtos.acessarDetalhesDoPrimeiroProduto();
     validacaoProdutos.paginaDetalheVisivel();
     validacaoProdutos.detalhesDoProdutoVisiveis();
+    cy.screenshot('produto-visivel');
   });
 });
