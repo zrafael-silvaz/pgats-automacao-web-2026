@@ -47,7 +47,7 @@ Baseados nos [casos de teste públicos](https://www.automationexercise.com/test_
 
 ## Pré-requisitos
 
-- [Node.js](https://nodejs.org/) (versão compatível com o Cypress 13)
+- [Node.js](https://nodejs.org/) 26 (Active LTS)
 - npm
 
 ## Instalação

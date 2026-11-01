@@ -1,8 +1,8 @@
-require('dotenv').config();
+import 'dotenv/config';
+import { defineConfig } from 'cypress';
+import cypressMochawesomeReporter from 'cypress-mochawesome-reporter/plugin.js';
 
-const { defineConfig } = require('cypress');
-
-module.exports = defineConfig({
+export default defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     charts: true,
@@ -37,7 +37,7 @@ module.exports = defineConfig({
         return launchOptions;
       });
 
-      require('cypress-mochawesome-reporter/plugin')(on);
+      cypressMochawesomeReporter(on);
       return config;
     },
   },
