@@ -27,6 +27,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           install-command: npm ci
+          command: npx cypress run --e2e --browser chrome
 
       - name: Salvar relatorios e evidencias
         uses: actions/upload-artifact@v6
